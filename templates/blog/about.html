@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}О нас{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>О проекте</h2>
+    </div>
+    <div class="card-body">
+        <p>Это учебный проект, созданный для изучения Django.</p>
+        <p>Здесь можно создавать, редактировать и удалять посты.</p>
+        <a href="{% url 'post_list' %}" class="btn btn-primary">К постам</a>
+    </div>
+</div>
+{% endblock %}
